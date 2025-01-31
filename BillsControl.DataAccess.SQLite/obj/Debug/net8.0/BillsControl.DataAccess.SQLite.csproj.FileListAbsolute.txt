@@ -1,0 +1,17 @@
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.DataAccess.SQLite.deps.json
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.DataAccess.SQLite.dll
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.DataAccess.SQLite.pdb
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.csproj.AssemblyReference.cache
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.AssemblyInfoInputs.cache
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.AssemblyInfo.cs
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.csproj.CoreCompileInputs.cache
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.dll
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\refint\BillsControl.DataAccess.SQLite.dll
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.pdb
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\ref\BillsControl.DataAccess.SQLite.dll
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.DataAccess.SQLite.runtimeconfig.json
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsControl.DataAccess.SQLite.genruntimeconfig.cache
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.Core.dll
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\bin\Debug\net8.0\BillsControl.Core.pdb
+D:\repos\BillsControl\BillsControl.DataAccess.SQLite\obj\Debug\net8.0\BillsCon.04C3447D.Up2Date
