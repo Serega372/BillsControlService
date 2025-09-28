@@ -5,11 +5,9 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Api", "BillsControl.Api\BillsControl.Api.csproj", "{1E801FFB-A525-40F0-BE62-1DDA76F4AD7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.DataAccess.SQLite", "BillsControl.DataAccess.SQLite\BillsControl.DataAccess.SQLite.csproj", "{4F8429C4-CAB1-445F-857C-5DF7B53912A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Infrastructure", "BillsControl.Infrastructure\BillsControl.Infrastructure.csproj", "{4F8429C4-CAB1-445F-857C-5DF7B53912A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Core", "BillsControl.Core\BillsControl.Core.csproj", "{FEE7AA58-FAA2-405B-957D-245940390288}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Application", "BillsControl.Application\BillsControl.Application.csproj", "{8228287B-3176-4972-91C2-107EB6C60875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.ApplicationCore", "BillsControl.ApplicationCore\BillsControl.ApplicationCore.csproj", "{8228287B-3176-4972-91C2-107EB6C60875}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEE7AA58-FAA2-405B-957D-245940390288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEE7AA58-FAA2-405B-957D-245940390288}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEE7AA58-FAA2-405B-957D-245940390288}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEE7AA58-FAA2-405B-957D-245940390288}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Release|Any CPU.ActiveCfg = Release|Any CPU

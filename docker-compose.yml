@@ -1,0 +1,31 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./BillsControl.Api/Dockerfile
+    ports:
+      - "80:8080"
+      - "81:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_HOST=database
+      - DB_NAME=BillsControl
+      - DB_PORT=5432
+    depends_on:
+      - database
+
+  database:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: BillsControl
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

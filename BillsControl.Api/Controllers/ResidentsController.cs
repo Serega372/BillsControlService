@@ -1,5 +1,5 @@
-﻿using BillsControl.Core.Abstract;
-using BillsControl.Core.Dtos;
+﻿using BillsControl.ApplicationCore.Abstract;
+using BillsControl.ApplicationCore.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BillsControl.Api.Controllers
