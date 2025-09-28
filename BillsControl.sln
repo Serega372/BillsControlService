@@ -5,9 +5,9 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Api", "BillsControl.Api\BillsControl.Api.csproj", "{1E801FFB-A525-40F0-BE62-1DDA76F4AD7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Infrastructure", "BillsControl.Infrastructure\BillsControl.Infrastructure.csproj", "{4F8429C4-CAB1-445F-857C-5DF7B53912A6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.ApplicationCore", "BillsControl.ApplicationCore\BillsControl.ApplicationCore.csproj", "{8228287B-3176-4972-91C2-107EB6C60875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillsControl.Infrastructure", "BillsControl.Infrastructure\BillsControl.Infrastructure.csproj", "{C5A118F9-7E0A-4202-B79E-F38269888BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{1E801FFB-A525-40F0-BE62-1DDA76F4AD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E801FFB-A525-40F0-BE62-1DDA76F4AD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E801FFB-A525-40F0-BE62-1DDA76F4AD7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F8429C4-CAB1-445F-857C-5DF7B53912A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8228287B-3176-4972-91C2-107EB6C60875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A118F9-7E0A-4202-B79E-F38269888BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A118F9-7E0A-4202-B79E-F38269888BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A118F9-7E0A-4202-B79E-F38269888BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A118F9-7E0A-4202-B79E-F38269888BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
