@@ -1,4 +1,4 @@
 /.vs/BillsControl/FileContentIndex/*.vsidx
-/bin
-/obj
+*/bin
+*/obj
 /.idea
