@@ -1,14 +1,16 @@
 ﻿using BillsControl.ApplicationCore.Abstract;
 using BillsControl.ApplicationCore.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BillsControl.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/residents")]
     public class ResidentsController(IResidentsService residentsService) : ControllerBase
     {
         [HttpGet]
+        [Authorize(Roles = "Resident")]
         public async Task<ActionResult<List<ResidentsResponse>>> GetFilteredResidents(
             [FromQuery] ResidentsQueryFilterParams residentsQueryFilterParams)
         {

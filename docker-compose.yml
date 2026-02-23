@@ -5,7 +5,7 @@ services:
       dockerfile: ./BillsControl.Api/Dockerfile
     ports:
       - "80:8080"
-      - "81:8081"
+      - "443:8081"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - DB_USER=postgres

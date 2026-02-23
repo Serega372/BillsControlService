@@ -1,4 +1,7 @@
 using System.Data;
+using BillsControl.ApplicationCore.Abstract.Auth;
+using BillsControl.ApplicationCore.Entities;
+using BillsControl.Infrastructure.AuthHelpers;
 using FluentMigrator;
 
 namespace BillsControl.Infrastructure.Migrations;
@@ -6,40 +9,22 @@ namespace BillsControl.Infrastructure.Migrations;
 [Migration(202509231900)]
 public class InitMigration : Migration
 {
-    // private const string schema = "public";
-    
     public override void Up()
     {
-        if (!Schema.Schema("public").Exists())
-        {
-            Create.Schema("public");
-        }
-
-        if (!Schema.Schema("public").Table("personal_bills").Exists())
-        {
-            CreateTablePersonalBills();
-        }
-        
-        if (!Schema.Schema("public").Table("residents").Exists())
-        {
-            CreateTableResidents();
-        }
-
-        if (!Schema.Schema("public").Table("residents").Constraint("residents_bill_id_fkey").Exists())
-        {
-            Create.ForeignKey("residents_bill_id_fkey")
-                .FromTable("residents").InSchema("public").ForeignColumn("personal_bill_id")
-                .ToTable("personal_bills").InSchema("public").PrimaryColumn("id").OnDelete(Rule.SetNull);
-        }
+        Create.Schema("public");
+        CreateTablePersonalBills();
+        CreateTableResidents();
+        CreateTableUsers();
+        CreateResidentsBillIdForeignKey();
+        CreateAdminEntity();
     }
 
     public override void Down()
     {
-        if (Schema.Table("personal_bills").Exists())
-            Delete.Table("personal_bills");
-        
-        if (Schema.Table("residents").Exists())
-            Delete.Table("residents");
+        Delete.ForeignKey("residents_bill_id_fkey").OnTable("residents");
+        Delete.Table("users");
+        Delete.Table("residents");
+        Delete.Table("personal_bills");
     }
 
     private void CreateTablePersonalBills()
@@ -66,5 +51,35 @@ public class InitMigration : Migration
             .WithColumn("middle_name").AsString(35).Nullable()
             .WithColumn("personal_bill_id").AsGuid().Nullable()
             .WithColumn("is_owner").AsBoolean().NotNullable();
+    }
+
+    private void CreateTableUsers()
+    {
+        Create.Table("users")
+            .InSchema("public")
+            .WithColumn("id").AsGuid().NotNullable().PrimaryKey()
+            .WithColumn("username").AsString(35).NotNullable()
+            .WithColumn("password_hash").AsString().NotNullable()
+            .WithColumn("role").AsInt32().NotNullable();
+    }
+
+    private void CreateResidentsBillIdForeignKey()
+    {
+        Create.ForeignKey("residents_bill_id_fkey")
+            .FromTable("residents").InSchema("public").ForeignColumn("personal_bill_id")
+            .ToTable("personal_bills").InSchema("public").PrimaryColumn("id").OnDelete(Rule.SetNull);
+    }
+
+    private void CreateAdminEntity()
+    {
+        Insert.IntoTable("users")
+            .InSchema("public")
+            .Row(new
+            {
+                id = "7a9f1d6d-f7fe-49d1-b918-ea0fda7156ab",
+                username = "admin",
+                password_hash = "$2a$11$9yz7sHlJH/4r4903TsktvOiFFLyeV3ftMVBFuSdTIHVA53ZzWD.Bm",
+                role = 0
+            });
     }
 }

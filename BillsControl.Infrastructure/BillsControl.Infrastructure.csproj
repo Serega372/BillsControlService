@@ -7,10 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
       <PackageReference Include="Dapper" Version="2.1.66" />
       <PackageReference Include="FluentMigrator" Version="7.1.0" />
       <PackageReference Include="FluentMigrator.Runner.Core" Version="7.1.0" />
       <PackageReference Include="FluentMigrator.Runner.Postgres" Version="7.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.20" />
       <PackageReference Include="Npgsql" Version="9.0.3" />
     </ItemGroup>
 

@@ -1,11 +1,12 @@
 ﻿using BillsControl.ApplicationCore.Abstract;
 using BillsControl.ApplicationCore.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BillsControl.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/personal-bills")]
     public class PersonalBillsController(IPersonalBillsService personalBillsService) : ControllerBase
     {
         [HttpGet]
